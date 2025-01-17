@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+	<displayName>Adobe Reader DC</displayName>
+	<description>This file contains strings for Adobe Reader DC policies</description>
+	<resources>
+		<stringTable>
+			<string id="SupportedReaderDC">Adobe Reader DC</string>
+			<string id="SupportedReader11">Adobe Reader 11.0+</string>
+			<string id="SupportedReader10">Adobe Reader 10.0+</string>
+			<string id="SupportedReader95">Adobe Reader 9.5+</string>
+			<string id="SupportedReader90">Adobe Reader 9.0+</string>
+			<string id="SupportedReader81">Adobe Reader 8.1+</string>
+			<string id="SupportedReader80">Adobe Reader 8.0+</string>
+			<string id="SupportedReader70">Adobe Reader 7.0+</string>
+			<string id="AdobeCategory">Adobe</string>
+			<string id="ReaderDCCategory">Reader DC</string>
+			<string id="SecurityCategory">Security</string>
+			<string id="CloudCategory">Cloud Services</string>
+			<string id="EmbeddedContentCategory">Embedded Content</string>
+			<string id="UpdaterCategory">Updater</string>
+			<string id="OtherCategory">Other</string>
+			<string id="TrustedLocationCategory">Trusted Locations</string>
+			<string id="EnhancedSecurityStandalone">Enhanced Security: standalone mode</string>
+			<string id="EnhancedSecurityStandalone_Explain">The enhanced security feature is designed to limit document behavior when such behavior is perceived as a vulnerability or security risk. Enhanced security blocks 6 actions: data injection, script injection, automatic printing, web links (unless allowed by trust manager settings), cross-domain access, and external stream access. Offline mode occurs when Adobe Reader is running as an application. Enhanced security is enabled by default. If this setting is set to Enabled or Disabled, users will not be able to change it. If this setting is set to Not Configured, users can change it. The Not Configured and Enabled values have the same behavior.</string>
+			<string id="EnhancedSecurityBrowser">Enhanced Security: browser mode</string>
+			<string id="EnhancedSecurityBrowser_Explain">The enhanced security feature is designed to limit document behavior when such behavior is perceived as a vulnerability or security risk. Enhanced security blocks 6 actions: data injection, script injection, automatic printing, web links (unless allowed by trust manager settings), cross-domain access, and external stream access. Browser mode occurs when Adobe Reader is running as a browser plugin. Enhanced security is enabled by default. If this setting is set to Enabled or Disabled, users will not be able to change it. If this setting is set to Not Configured, users can change it. The Not Configured and Enabled values have the same behavior.</string>
+			<string id="ProtectedMode">Protected Mode</string>
+			<string id="ProtectedMode_Explain">Protected Mode transparently protects users from attacks by isolating Reader DC application processes. Protected Mode is enabled by default. If this setting is set to Enabled or Disabled, users will not be able to change it. If this setting is set to Not Configured, users can change it. "Not configured" and "Enabled" have the same behavior.</string>
+			<string id="EnableProtectedModeAppContainer">Run into AppContainer</string>
+			<string id="EnableProtectedModeAppContainer_Explain">Use AppContainer technology to launch the application. To run in AppContainer, protected mode must be enabled. Running in AppContainer is enabled by default. If this setting is set to Enabled or Disabled, users will not be able to change it. If this setting is set to Not Configured, users can change it. The Not Configured and Enabled values have the same behavior.</string>			
+			<string id="ProtectedView">Protected View</string>
+			<string id="ProtectedView_Explain">Protected View is a mode that blocks most application actions until the user decides whether to trust the document or not. This helps protect users from potentially harmful content inside PDF files. Protected View is only supported if "Enable Protected Mode at startup" is enabled. Protected View is disabled by default. If this setting is set to Enabled or Disabled, users will not be able to change it. If this setting is set to Not Configured, users can change it. The Not Configured and Disabled values have the same behavior.</string>
+			<string id="DisableProtectedView">Disable Protected View</string>
+			<string id="EnableProtectedViewUnsafeOnly">Enable Protected View for unsafe locations only</string>
+			<string id="EnableProtectedView">Enable Protected View</string>
+			<string id="CloudDocumentService">Adobe Document Cloud services and plugins</string>
+			<string id="CloudDocumentService_Explain">Controls access to Adobe Document Cloud services from the Adobe Reader DC user interface, excluding services controlled by other settings. The "Disabled" value hides the "Login" button from the tab bar, as well as the following plugins from the interface: "Edit PDF", "Export PDF", "Create PDF", "Merge Files". The Not Configured and Enabled values have the same behavior and allow access to Document Cloud services through the Adobe Reader DC user interface.</string>
+			<string id="PluginFillSign">Fill and sign</string>
+			<string id="PluginFillSign_Explain">Controls the availability of the Fill and Sign plugin in the Adobe Reader DC user interface. The values "Not configured" and "Enabled" have the same behavior and allow the plugin to be used.</string>
+			<string id="CloudPrefSync">Preferences synchronization</string>
+			<string id="CloudPrefSync_Explain">Controls the synchronization of settings. Synchronizes desktop settings across all devices on which the user is signed in with an Adobe ID (including mobile devices). The Not Configured and Enabled options have the same behavior: they allow settings and preferences to sync when you sign in with your Adobe ID.</string>
+			<string id="DisableMaintenance32">Disable Maintenance (32-bit)</string>
+			<string id="DisableMaintenance64">Disable Maintenance (64-bit)</string>
+			<string id="DisableMaintenance_Explain">Controls the ability to launch a repair installation of Adobe Reader from the Help menu item. Setting this to Enabled will prevent users from running a repair installation of Adobe Reader.</string>
+			<string id="TrustedOSSites">OS Trusted Sites</string>
+			<string id="TrustedOSSites_Explain">Automatic trust to sites from OS security zones (from IE zones). Setting it to Enabled or Not Configured will allow PDFs opened from trusted OS sites to open normally without any security restrictions. The value "Disabled" disables trust in these sites.</string>
+			<string id="TrustedCertificate">Trust Certified Documents</string>
+			<string id="TrustedCertificate_Explain">Automatic trust in documents with valid certification. Setting this to Enabled will allow signed PDFs to open normally without any security restrictions. The values "Not configured" or "Disabled" have the same behavior and disable automatic trust in such documents.</string>
+			<string id="CloudSharepoint">SharePoint Services</string>
+			<string id="CloudSharepoint_Explain">Integration with SharePoint and Office 365 services. Disabled disables integration. The values "Enabled" and "Not Configured" are enabled respectively.</string>
+			<string id="CloudWebConnectors">Web Connectors</string>
+			<string id="CloudWebConnectors_Explain">Using third-party file storage services such as Box, Dropbox, Google Drive and OneDrive. The value "Disabled" prohibits the use of these services. The values "Enabled" and "Not Configured" are enabled respectively.</string>
+			<string id="Updater">Adobe Reader Product Updates</string>
+			<string id="Updater_Explain">Control Adobe Reader DC's ability to download and install updates. The value "Disabled" disables automatic updating. The values "Enabled" and "Not Configured" are enabled respectively.</string>
+			<string id="UpdaterTo64">Upgrading the 32-bit version to 64-bit</string>
+			<string id="UpdaterTo64_Explain">The 32-bit version of Adobe Reader DC can be automatically updated to 64-bit. This parameter controls this feature. The "Disabled" value prevents automatic change of bit depth during update. The values "Enabled" and "Not Configured" are enabled respectively. The parameter is relevant only if automatic updating is enabled.</string>
+			<string id="Javascript">Allow JavaScript</string>
+			<string id="Javascript_Explain">Execute JavaScript for all PDF documents. Setting it to Disabled will cause the PDF to not be able to execute JavaScript. Setting this to Enabled will allow JavaScript to be used.</string>
+			<string id="Enable3d">Allow 3D Content</string>
+			<string id="Enable3d_Explain">Using 3D content inside PDF documents. Setting it to Disabled or Not Configured will prevent 3D content from loading inside PDF files.</string>
+			<string id="UsageStats">Allow Sending Usage Statistics</string>
+			<string id="UsageStats_Explain">Controls the collection of usage statistics for sending to adobe.com. Setting it to "Allow" or "Not Configured" will allow statistics to be sent to adobe.com.</string>
+			<string id="Upsell">Allow Adobe Upsell</string>
+			<string id="Upsell_Explain">Manages advertising banners from Adobe within the application. Setting it to "Disabled" removes the "Try Acrobat Pro" button on the main tab.</string>
+			<string id="ShowMsgAtLaunch">Allow Messages at Startup</string>
+			<string id="ShowMsgAtLaunch_Explain">Controls whether messages from Adobe are shown at product launch. When set to Enabled or Not Configured, messages will be displayed. If you select Disabled, messages will not be displayed.</string>
+			<string id="DontShowMsgWhenViewingDoc">Allow Messages when Document Opens</string>
+			<string id="DontShowMsgWhenViewingDoc_Explain">Disable messages from Adobe in an open document tab. This setting controls advertising messages in the sidebar. If set to Enabled, messages will not be displayed. If you select Disabled or Not Configured, messages will be displayed.</string>
+			<string id="EnableModernInterface">Enable use of the modern interface</string>
+			<string id="EnableModernInterface_Explain">Enable use of the modern interface. "Enabled" switches the interface to the new theme. The value is "Disabled" to classic. The value "Not configured" leaves the choice to the user.</string>
+			<string id="Eula">Accept EULA</string>
+			<string id="Eula_Explain">Automatic acceptance of the EULA for the end user. If you select Enabled, you will not be prompted to accept the license agreement. Setting it to "Not Configured" after setting it to "Enabled" or "Disabled" will retain the previous setting.</string>	  
+			<string id="FTE">Display the "Start Screen" on first launch</string>
+			<string id="FTE_Explain">Controls whether the "Start Screen" is displayed when the product is launched for the first time. If you select Enabled or Not Configured, the screen will be displayed. Setting it to Disabled will prevent the screen from appearing.</string>
+			<string id="LoadSettingsFromUrlEUTL">Load European Union certificate authorities (EUTL) from Adobe</string>
+			<string id="LoadSettingsFromUrlEUTL_Explain">Specifies whether to periodically download trusted certificates from the Adobe EUTL server. By default, downloading is allowed. Setting it to "Not Configured" after setting it to "Enabled" or "Disabled" will retain the previous setting.</string>
+			<string id="LoadSettingsFromUrlAATL">Load certificate authorities (AATL) from Adobe</string>
+			<string id="LoadSettingsFromUrlAATL_Explain">Specifies whether to periodically download trusted certificates from the Adobe AATL server. By default, downloading is allowed. Setting it to "Not Configured" after setting it to "Enabled" or "Disabled" will retain the previous setting.</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="ProtectedView_Dropdown">
+				<dropdownList defaultItem="2" refId="ProtectedView_Dropdown">Protected View:</dropdownList>
+			</presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>
