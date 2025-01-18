@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+	<displayName></displayName>
+	<description></description>
+	<resources>
+		<stringTable>
+			<string id="EnableIPv6">Включить все компоненты IPv6 (по-умолчанию)</string>
+			<string id="DisableIPv6">Отключить все компоненты IPv6 (не рекомендуется)</string>
+			<string id="PreferIPv4">Приоритет IPv4 над IPv6</string>
+			<string id="ConfigureIPv6_TitleText">Политика конфигурации протокола IPv6</string>
+			<string id="ConfigureIPv6_Explain">Эта политика настраивает IPv6 на сетевых интерфейсах. По умолчанию, Windows Vista и более поздние версии Windows включают и используют IPv6 в качестве протокола по умолчанию.
+	  
+Если политика переведена в положение "Включено", вы сможете указать как Windows будет использовать IPv6. В реестре будет создан параметр "DisabledComponents", в разделе "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters", в который будет внесено значение соответствующее выбранному пункту меню. 
+Рекомендуемая настройка "Приоритет IPv4 над IPv6".
+	  
+Если политика переведена в положение "Отключено", параметр "DisabledComponents" будет удален. Система будет работать с настройкой IPv6 по-умолчанию.
+	  
+Если политика переведена в положение "Не задано", то никакие изменения в реестр не будут внесены. Т.е. если ранее был создан параметр "DisabledComponents", то он сохранится и будет определять поведение IPv6.
+	  
+Дополнительную информацию см. на странице http://support.microsoft.com/default.aspx/kb/929852.</string>
+			<string id="ConfigureIPv6">Конфигурация протокола IPv6</string>
+			<string id="SUPPORTED_VISTA">Не ниже Windows Vista</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="DisabledComponents">
+				<dropdownList refId="ConfigureIPv6" noSort="true">Конфигурация протокола IPv6</dropdownList>
+			</presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>
