@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+	<displayName></displayName>
+	<description></description>
+	<resources>
+		<stringTable>
+			<string id="EnableIPv6">Enable all IPv6 components (default)</string>
+			<string id="DisableIPv6">Disable all IPv6 components</string>
+			<string id="PreferIPv4">Prefer IPv4 over IPv6</string>
+			<string id="ConfigureIPv6_TitleText">IPv6 Configuration Policy</string>
+			<string id="ConfigureIPv6_Explain">This policy configures IPv6 on network interfaces. By default, Windows Vista and later versions of Windows enable and use IPv6 as the default protocol.
+
+If the policy is set to "Enabled", you can specify how Windows will use IPv6. The "DisabledComponents" parameter will be created in the registry, in the "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters" section, in which the value corresponding to the selected menu item will be entered.
+The recommended setting is "IPv4 priority over IPv6".
+
+If the policy is set to "Disabled", the "DisabledComponents" setting will be removed. The system will work with the default IPv6 setting.
+
+If the policy is set to "Not configured", then no changes will be made to the registry. That is, if the "DisabledComponents" parameter was previously created, it will be preserved and will determine the behavior of IPv6.
+
+For more information, see http://support.microsoft.com/default.aspx/kb/929852.</string>
+			<string id="ConfigureIPv6">IPv6 Configuration</string>
+			<string id="SUPPORTED_VISTA">At least Windows Vista</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="DisabledComponents">
+				<dropdownList refId="ConfigureIPv6" noSort="true">IPv6 Configuration</dropdownList>
+			</presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>
